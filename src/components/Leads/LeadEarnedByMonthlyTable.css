@@ -1,0 +1,82 @@
+.lead-earned-by{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+.lead-earned-by table th:nth-child(1),
+.lead-earned-by table td:nth-child(1) {
+    width: 10% !important;
+}
+
+.lead-earned-by table th:nth-child(2),
+.lead-earned-by table td:nth-child(2) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(3),
+.lead-earned-by table td:nth-child(3) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(4),
+.lead-earned-by table td:nth-child(4) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(5),
+.lead-earned-by table td:nth-child(5) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(6),
+.lead-earned-by table td:nth-child(6) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(7),
+.lead-earned-by table td:nth-child(7) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(8),
+.lead-earned-by table td:nth-child(8) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(9),
+.lead-earned-by table td:nth-child(9) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(10),
+.lead-earned-by table td:nth-child(10) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(11),
+.lead-earned-by table td:nth-child(11) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(12),
+.lead-earned-by table td:nth-child(12) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(13),
+.lead-earned-by table td:nth-child(14) {
+    width: 6.5% !important;
+    text-align: center;
+}
+.lead-earned-by table th:nth-child(14),
+.lead-earned-by table td:nth-child(14) {
+    width: 7.5% !important;
+    text-align: center;
+}

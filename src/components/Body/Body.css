@@ -1,0 +1,36 @@
+/* src/components/Body/Body.css */
+
+.body {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Needed for absolute positioning of breadcrumbs */
+  background-color: #fcf9ff;
+}
+
+.breadcrumbs {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+  font-family: Poppins;
+  font-size: 16px;
+}
+.home-icon{
+  margin-top: 2px;
+  color: rgb(174, 22, 194);
+}
+
+.breadcrumb-item {
+  margin: 0 5px;
+  font-size: 16px;
+
+}
+
+.breadcrumb-separator {
+  margin: 0 5px;
+}

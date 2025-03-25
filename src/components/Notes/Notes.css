@@ -1,0 +1,132 @@
+.notes-container {
+    margin-top: 20px;
+}
+
+.add-note-button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Poppins;
+    cursor: pointer;
+    
+}
+
+.add-note-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.add-note-form textarea {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.submit-note-button {
+    background-image: linear-gradient(180deg, #9e0404, #f2295b 100%);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.notes-list {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.note-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.note-header {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #2d3748;
+}
+
+.note-message {
+    font-size: .9em;
+    font-family: Poppins;
+    color: #363636;
+}
+
+.success-tooltip {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.note-header {
+    margin-bottom: 5px;
+}
+
+.author-name {
+    font-weight: bold;
+}
+
+.note-date {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Poppins";
+    color: #7a7a7a;
+}
+
+.note-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.submit-note-icon, .cancel-note-icon {
+    font-size: 1.5em; /* Adjust icon size */
+    cursor: pointer;
+    margin-left: 10px; /* Add spacing between icons */
+}
+
+.submit-note-icon {
+    color: green; /* Color for submit icon */
+    margin-bottom: 10px;
+}
+
+.cancel-note-icon {
+    color: red; /* Color for cancel icon */
+}
+
+.note-item {
+    position: relative; /* Needed for absolute positioning of delete icon */
+}
+
+.delete-note-icon {
+    font-size: 1em;
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    top: 13px; /* 13px top margin */
+    right: 5px; /* Left alignment, adjust as needed */
+    display: none; /* Initially hidden */
+}
+
+.note-item:hover .delete-note-icon {
+    display: inline-block; /* Show on hover */
+}

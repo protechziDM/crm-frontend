@@ -1,0 +1,199 @@
+/* PaymentForLead.css */
+.payment-for-lead-container {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Removed overflow-x: auto; */
+}
+
+.filtered-payments{
+    margin-bottom: 25px;
+}
+.filtered-payments span > span{
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.payment-header h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.payment-header h2 span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.payment-header h2, thead > tr > th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.total-payment {
+    font-weight: bold;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+.total-payment span{
+    color: green;
+}
+
+.payment-table-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    /* Removed overflow-x: auto; */
+}
+
+.payment-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: 100%; /* Allow browser to calculate widths */
+    box-sizing: border-box;
+}
+
+.payment-table thead th {
+    background-color: #f0f0f0;
+    padding: 12px 10px; /* Reduced padding */
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    box-sizing: border-box;
+}
+
+.payment-table tbody td {
+    padding: 10px 8px; /* Reduced padding */
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+}
+
+.payment-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Column Widths (using min-width to allow flexibility) */
+.payment-table th:nth-child(1),
+.payment-table td:nth-child(1) { /* Edit */
+    width: 21px;
+    text-align: center;
+}
+
+.payment-table th:nth-child(2),
+.payment-table td:nth-child(2) { /* Client Name */
+    max-width: 10%;
+}
+
+.payment-table th:nth-child(3),
+.payment-table td:nth-child(3) { /* Service */
+    width: 12%;
+}
+
+.payment-table th:nth-child(4),
+.payment-table td:nth-child(4) { /* Due Date */
+    width: 12%;
+}
+
+.payment-table th:nth-child(5),
+.payment-table td:nth-child(5) { /* Received Date */
+    width: 12%;
+}
+
+.payment-table th:nth-child(6),
+.payment-table td:nth-child(6) { /* Amount */
+    width: 8%;
+}
+
+.payment-table th:nth-child(7),
+.payment-table td:nth-child(7) { /* Period */
+    width: 9%;
+}
+
+.payment-table th:nth-child(8),
+.payment-table td:nth-child(8) { /* Source */
+    width: 8%;
+}
+
+.payment-table th:nth-child(9),
+.payment-table td:nth-child(9) { /* Remarks */
+    width: 17%;
+}
+
+.payment-table th:nth-child(10),
+.payment-table td:nth-child(10) { /* Delete */
+    width: 30px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .payment-table thead {
+        display: none;
+    }
+
+    .payment-table tbody td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        box-sizing: border-box;
+    }
+
+    .payment-table tbody td::before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+        box-sizing: border-box;
+    }
+
+    .payment-table tbody tr {
+        margin-bottom: 15px;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+}
+
+.pagination {
+    display: flex; /* Apply flexbox layout */
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}

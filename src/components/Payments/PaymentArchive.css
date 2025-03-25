@@ -1,0 +1,73 @@
+.payments-main-container-archive{
+    padding: 0px;
+    font-family: Poppins;
+}
+
+.payments-main-container-archive .del-btn{
+    padding: 8px 15px;
+    background-color:#d9192d;
+    color: #ffffff;
+    box-shadow: none;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.payments-main-container-archive .res-btn{
+    padding: 8px 15px;
+    background-color:#007bff;
+    color: #ffffff;
+    box-shadow: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Column Widths (using min-width to allow flexibility) */
+.payments-main-container-archive th:nth-child(1),
+.payments-main-container-archive td:nth-child(1) { /* Edit */
+    width: 6%;
+}
+
+.payments-main-container-archive th:nth-child(2),
+.payments-main-container-archive td:nth-child(2) { /* Lead No */
+    max-width: 12%;
+}
+
+.payments-main-container-archive th:nth-child(3),
+.payments-main-container-archive td:nth-child(3) { /* Name */
+    width: 12%;
+}
+
+.payments-main-container-archive th:nth-child(4),
+.payments-main-container-archive td:nth-child(4) { /* Service */
+    width: 12%;
+}
+
+.payments-main-container-archive th:nth-child(5),
+.payments-main-container-archive td:nth-child(5) { /* Due Date */
+    width: 10%;
+}
+
+.payments-main-container-archive th:nth-child(6),
+.payments-main-container-archive td:nth-child(6) { /* Received Date */
+    width: 6%;
+}
+
+.payments-main-container-archive th:nth-child(7),
+.payments-main-container-archive td:nth-child(7) { /* Amount */
+    width: 12%;
+    text-align: left;
+}
+
+.payments-main-container-archive th:nth-child(8),
+.payments-main-container-archive td:nth-child(8) { /* Period */
+    width: 8%;
+}
+
+.payments-main-container-archive th:nth-child(9),
+.payments-main-container-archive td:nth-child(9) { /* Source */
+    width: 16%;
+    text-align: right;
+}

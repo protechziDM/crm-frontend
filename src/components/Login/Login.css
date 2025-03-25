@@ -1,0 +1,78 @@
+/* src/components/Login/Login.css */
+.login-container-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container-layout form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-container-layout input,
+.login-container-layout button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.image-logo{
+    max-width: 210px;
+    margin-bottom: 25px;
+}
+
+.image-logo-bann{
+    max-height: 586px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.login-main-sec{
+    display: flex;
+        width: 1120px;
+        height: 586px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        justify-content: space-between;
+}
+.login-form-column{
+    padding: 110px 100px;
+    width: 38%;
+}
+
+.image-form-column{
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+}
+
+.login-container-layout input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]), 
+.login-container-layout select{
+    width: 93%;
+    max-width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.login-container-layout button{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.login-container-layout button:hover{
+    background-color: #6C58F0;
+    color: #ffffff;
+}
+
+
+
+
+

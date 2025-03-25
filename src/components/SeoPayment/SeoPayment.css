@@ -1,0 +1,104 @@
+/* SeoPayment.css */
+.seo-payment-container {
+    width: 100%;
+    overflow-x: auto;
+    font-family: Poppins;
+    padding-bottom: 50px;
+}
+
+.seo-payment-container table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: none;
+    margin-top: 0;
+}
+
+.seo-payment-container th, .seo-payment-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.seo-payment-container th {
+    background-color: #f2f2f2;
+}
+
+
+
+.seo-payment-container table th:nth-child(1),
+.seo-payment-container table td:nth-child(1) {
+    width: 60px;
+    text-align: center;
+}
+.seo-payment-container table th:nth-child(2),
+.seo-payment-container table td:nth-child(2) {
+    width: 7%;
+}
+.seo-payment-container table th:nth-child(3),
+.seo-payment-container table td:nth-child(3) {
+    width: 7%x;
+}
+.seo-payment-container table th:nth-child(4),
+.seo-payment-container table td:nth-child(4) {
+    width: 15%;
+}
+.seo-payment-container table th:nth-child(5),
+.seo-payment-container table td:nth-child(5) {
+    width: 7%;
+}
+.seo-payment-container table th:nth-child(6),
+.seo-payment-container table td:nth-child(6) {
+    width: auto;
+}
+
+.edit-icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.add-payment-icon {
+    cursor: pointer;
+}
+
+.lead-no-link {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.due-date-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.due-date-input {
+    width: 100px;
+}
+
+.seo-payment-container table span > span{
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.summary {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+.summary p {
+    font-weight: bold;
+}
+
+.monthly-payment {
+    color: green;
+}
+
+.total-monthly-payment {
+    font-weight: bold;
+    color: green;
+}
+

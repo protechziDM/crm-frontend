@@ -1,0 +1,194 @@
+.full-lead-edit-form {
+  max-width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-lead-edit-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.full-lead-edit-form input[type="text"],
+.full-lead-edit-form input[type="number"],
+.full-lead-edit-form select,
+.full-lead-edit-form .react-datepicker-wrapper input {
+  width: calc(100% - 22px);
+  padding: 6px 10px;
+  margin-bottom: 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.full-lead-edit-form .react-datepicker-wrapper input {
+  width:calc(100% - 22px);
+}
+
+.full-lead-edit-form select {
+  height: 40px;
+}
+
+.full-lead-edit-form .react-switch-wrapper {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  table-layout: fixed;
+}
+
+.full-lead-edit-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px; /* Reduced button padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Reduced button font size */
+  margin-right: 5px; /* Reduced margin between buttons */
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.full-lead-edit-form button:hover {
+  background-color: #0056b3;
+}
+
+.full-lead-edit-form button[type="button"] {
+  background-color: #6c757d;
+}
+
+.full-lead-edit-form button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+.full-lead-edit-form .react-datepicker__input-container {
+  display: block;
+}
+
+.full-lead-edit-form .react-datepicker__input-container input{
+  width:calc(100% - 22px);
+}
+
+.full-lead-edit-form .service-fields {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.full-lead-edit-form .service-fields label {
+  margin-top: 10px;
+}
+
+.full-lead-edit-form .react-switch-bg {
+  display: flex;
+  align-items: center;
+}
+
+.full-lead-edit-form .react-switch-bg span {
+  margin-left: 10px;
+}
+
+/* New styles for service-specific fields */
+.full-lead-edit-form .service-specific-fields-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.full-lead-edit-form .service-specific-fields-row .react-datepicker-wrapper,
+.full-lead-edit-form .service-specific-fields-row input[type="number"] {
+  margin-right: 10px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.full-lead-edit-form .service-specific-fields-row .react-datepicker-wrapper input,
+.full-lead-edit-form .service-specific-fields-row input[type="number"] {
+  width: auto;
+  border: none;
+  text-align: right;
+}
+
+.full-lead-edit-form .service-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.full-lead-edit-form .service-row-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+}
+
+.full-lead-edit-form .service-row label {
+  width: 150px;
+  display: flex;
+  margin-right: 15px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.full-lead-edit-form .follow-up-hosted-row {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding: 35px 0px;
+}
+.full-lead-edit-form .change-post-date{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding: 35px 0px;
+}
+
+.lead-earned-by-page{
+  width: 100%;
+}
+.full-lead-edit-form .follow-up-hosted-row label,
+.full-lead-edit-form .follow-up-hosted-row .react-datepicker-wrapper,
+.full-lead-edit-form .follow-up-hosted-row select {
+  margin-right: 10px;
+}
+
+.full-lead-edit-form .follow-up-hosted-row .react-datepicker-wrapper,
+.full-lead-edit-form .follow-up-hosted-row select {
+  flex-grow: 1;
+}
+
+.full-lead-edit-form .button-row {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  margin-top: 20px;
+}
+
+
+
+input[type="checkbox" i] {
+  width: 17px;
+  height: 15px;
+}
+
+.service-name{
+  font-weight: 500;
+  margin-left: 11px;
+}

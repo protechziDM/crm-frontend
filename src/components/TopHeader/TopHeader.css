@@ -1,0 +1,122 @@
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 10000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.left-column {
+  display: flex;
+  align-items: center;
+}
+
+.right-column {
+  display: flex;
+  align-items: center;
+}
+
+.left-icon,
+.right-user-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user-image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.left-icon span {
+  cursor: pointer;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.left-icon span,
+.right-user-icon img {
+  text-overflow: ellipsis;
+}
+
+.left-icon img {
+  max-width: 14%;
+  height: auto;
+}
+
+.search-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+.search-container input{
+  border-radius: 50%;
+}
+
+.search-input{
+  padding: 6px 12px !important;
+  border: 1px solid #ccc;
+  border-radius: 25px !important;
+  width: 200px;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  z-index: 10;
+}
+
+.search-dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.search-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* New Styles for Layout */
+.top-header .left-column {
+  flex: 0 0 auto; /* Prevent left column from growing */
+}
+
+.top-header .right-column {
+  flex: 1 1 auto; /* Allow right column to take remaining space */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center;
+}
+
+.top-header .right-column .search-container {
+  margin-right: 15px; /* Adjust spacing between search and user icon */
+}
+
+.top-header .right-column .right-user-icon {
+  margin-left: 0; /* Remove left margin from user icon */
+}
+
+.top-header .left-column .image-logo{
+  margin-right: 10px;
+  max-width: 175px;
+}
