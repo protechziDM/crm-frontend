@@ -3,9 +3,7 @@ import axios from 'axios';
 import './Leads.css';
 import './RemindersAndFollowUps.css';
 import { useAuth } from '../../contexts/AuthContext';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
-import { BsTelephone } from "react-icons/bs";
 
 function RemindersAndFollowUps() {
     const [leads, setLeads] = useState([]);
@@ -14,8 +12,7 @@ function RemindersAndFollowUps() {
     const { user, isAdmin, isLoggedIn } = useAuth();
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
-    const baseUrl = process.env.REACT_APP_API_BASE_URL; // Get baseUrl from env
-
+    const baseUrl = process.env.REACT_APP_API_BASE_URL;
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -60,12 +57,8 @@ function RemindersAndFollowUps() {
     const filteredLeads = leads.filter(lead => {
         const searchMatch =
             (lead.name && lead.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
-            (lead.website && lead.website.toLowerCase().includes(searchTerm.toLowerCase())) ||
             (lead.lead_no != null && lead.lead_no.toString().includes(searchTerm)) ||
-            (lead.phone_no && lead.phone_no.toString().includes(searchTerm)) ||
-            (lead.cell_no && lead.cell_no.toString().includes(searchTerm)) ||
-            (lead.email1 && lead.email1.toLowerCase().includes(searchTerm.toLowerCase())) ||
-            (lead.email2 && lead.email2.toLowerCase().includes(searchTerm.toLowerCase()));
+            (lead.remarks && lead.remarks.toLowerCase().includes(searchTerm.toLowerCase()));
 
         return searchMatch;
     });
@@ -82,22 +75,12 @@ function RemindersAndFollowUps() {
         }
     };
 
-    const formatDate = (dateString) => {
-        if (!dateString) return 'N/A';
-
-        const date = new Date(dateString);
-        const day = date.getDate();
-        const month = date.toLocaleString('default', { month: 'short' });
-        const year = date.getFullYear();
-        return `${day} ${month} ${year}`;
-    };
-
     if (loading) {
         return <p>Loading...</p>;
     }
 
     const renderPagination = () => {
-        if (totalPages <= 1) { // Hide pagination if not needed
+        if (totalPages <= 1) {
             return null;
         }
 
@@ -140,8 +123,8 @@ function RemindersAndFollowUps() {
 
     return (
         <div className="leads-container-re">
-            <div className="filter-section" style={{margin:'0', top:'0'}}>
-                <h4 style={{margin:'0'}}>Reminders & Follow Ups</h4>
+            <div className="filter-section" style={{ margin: '0', top: '0' }}>
+                <h4 style={{ margin: '0' }}>Reminders & Follow Ups</h4>
                 <div className="filter-controls">
                     <input
                         type="text"
@@ -158,10 +141,6 @@ function RemindersAndFollowUps() {
                             <tr>
                                 <th>Lead No</th>
                                 <th>Name</th>
-                                <th>Website</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Country</th>
                                 <th>Remarks</th>
                             </tr>
                         </thead>
@@ -172,23 +151,6 @@ function RemindersAndFollowUps() {
                                         <Link to={`/lead/${lead.id}/${lead.lead_no}`}>{lead.lead_no}</Link>
                                     </td>
                                     <td>{lead.name}</td>
-                                    <td>
-                                        <a href={lead.website} target="_blank" rel="noopener noreferrer">
-                                            {lead.website}
-                                        </a>
-                                    </td>
-                                    <td>{lead.email1}</td>
-                                    <td>
-                                        {lead.phone_no || lead.cell_no ? (
-                                            <>
-                                                <BsTelephone icon={faPhone} className="phone-icon" />
-                                                {lead.phone_no || lead.cell_no}
-                                            </>
-                                        ) : (
-                                            ' '
-                                        )}
-                                    </td>
-                                    <td>{lead.country}</td>
                                     <td>{lead.remarks}</td>
                                 </tr>
                             ))}
