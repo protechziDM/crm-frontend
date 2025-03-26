@@ -105,7 +105,7 @@ function TopHeader() {
                 </div>
                 <div className="right-user-icon">
                     <img
-                        src="http://localhost:3000/static/media/Fav.1fb5b829f375c68bd85e.jpg"
+                        src="/static/media/Fav.1fb5b829f375c68bd85e.jpg"
                         alt="User Profile"
                         className="user-image"
                     />
