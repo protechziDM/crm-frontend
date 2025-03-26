@@ -11,7 +11,8 @@ function TopHeader() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const navigate = useNavigate();
     const searchRef = useRef(null);
-    const { user, isAdmin, isLoggedIn } = useAuth();
+    const { user, isAdmin } = useAuth();
+    const baseUrl = process.env.REACT_APP_API_BASE_URL; 
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -35,7 +36,7 @@ function TopHeader() {
         if (searchTerm) {
             const fetchLeads = async () => {
                 try {
-                    let url = 'http://localhost:5000/api/leads';
+                    let url = `${baseUrl}/api/leads`;
                     if (!isAdmin() && user) {
                         url += `/user/${user.id}`;
                     }
@@ -66,7 +67,7 @@ function TopHeader() {
         } else {
             setSearchResults([]);
         }
-    }, [searchTerm, user, isAdmin]);
+    }, [searchTerm, user, isAdmin, searchResults, baseUrl]);
 
     const handleSearchResultClick = (leadId, leadNo) => {
         console.log("Clicked Lead:", leadId, leadNo); //Debugging
